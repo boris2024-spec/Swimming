@@ -21,3 +21,18 @@ npm run dev
 
 ## 🎨 התאמות עיצוב
 ערוך צבעים/טיפוגרפיה ב-`src/theme.js`. תכנים דינמיים ב-`src/data/site.js`.
+
+## 🚀 פריסה ל‑Vercel (SPA)
+באפליקציות SPA (React Router), רענון על כתובת עומק עלול להחזיר 404 ללא כללי ניתוב. הוספנו קובץ `vercel.json` שמבצע rewrite לכל נתיב ללא סיומת קובץ אל `/`.
+
+קובץ: `vercel.json`
+
+```
+{
+	"rewrites": [
+		{ "source": "/((?!.*\\.).*)", "destination": "/" }
+	]
+}
+```
+
+כך Vercel ישרת את `index.html` לכל כתובת SPA (למשל `/about`, `/programs`), בעוד שנכסי סטטיים (למשל `/img/logo.png`) יוגשו כרגיל.
