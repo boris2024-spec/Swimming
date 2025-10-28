@@ -28,9 +28,9 @@ const Header = () => {
     <AppBar position="sticky" color="primary" enableColorOnDark >
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ gap: 1 }}>
-          <img src="public\img\Screenshot 2.PNG" alt="Logo" style={{ marginRight: '8px', height: '60px', borderRadius: '50%' }} />
+          <img src="/img/Screenshot 2.PNG" alt="Logo" style={{ marginRight: '8px', height: '60px', borderRadius: '50%' }} />
           <Typography variant="h6" component={RouterLink} to="/" color="inherit" sx={{ textDecoration: 'none', flexGrow: 1, fontWeight: 800 }}>
-         הפועל באר שבע 
+            הפועל באר שבע
           </Typography>
 
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1, alignItems: 'center' }}>
