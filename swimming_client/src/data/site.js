@@ -1,7 +1,7 @@
 export const coaches = [
-  { id: 1, name: 'דימה נ.', role: 'מאמן ראשי', bio: '20 שנות ניסיון, הסמכת מאמן תחרותי, לשעבר שחיין נבחרת.', img: 'https://picsum.photos/seed/coach1/600/600' },
-  { id: 2, name: 'נטלי ב.', role: 'מאמנת ילדים', bio: 'התמחות בהקניית ביטחון במים וטכניקה בסיסית.', img: 'https://picsum.photos/seed/coach2/600/600' },
-  { id: 3, name: 'עידו ק.', role: 'מאמן נוער', bio: 'בוגר וינגייט, דגש על טכניקה מתקדמת וכוח סבולת.', img: 'https://picsum.photos/seed/coach3/600/600' },
+  { id: 1, name: 'דימה נ.', role: 'מאמן ראשי', bio: '20 שנות ניסיון, הסמכת מאמן תחרותי, לשעבר שחיין נבחרת.', img: '/img/coch1.webp' },
+  { id: 2, name: 'נטלי ב.', role: 'מאמנת ילדים', bio: 'התמחות בהקניית ביטחון במים וטכניקה בסיסית.', img: '/img/coch3.webp' },
+  { id: 3, name: 'עידו ק.', role: 'מאמן נוער', bio: 'בוגר וינגייט, דגש על טכניקה מתקדמת וכוח סבולת.', img: '/img/coch2.webp' },
 ];
 
 export const programs = [

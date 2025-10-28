@@ -7,7 +7,7 @@ const CoachesGrid = () => (
     {coaches.map((c) => (
       <Grid item xs={12} md={4} key={c.id}>
         <Card>
-          <CardMedia component="img" image={c.img} height={260} alt={c.name} />
+          <CardMedia component="img" image={c.img} height={400} alt={c.name} />
           <CardContent>
             <Stack>
               <Typography variant="h6" fontWeight={800}>{c.name}</Typography>
