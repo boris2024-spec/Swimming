@@ -11,7 +11,7 @@ const Hero = () => {
       textAlign: 'center',
     }}>
       <img
-        src="..\src\img\Screenshot 2.PNG"
+        src="public\img\Screenshot 2.PNG"
         alt="Logo"
         style={{
           display: 'block',
