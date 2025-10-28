@@ -8,7 +8,7 @@ const rows = [
 ];
 
 const Schedule = () => (
-  <Container maxWidth="md" sx={{ py: 8 }}>
+   <Container maxWidth="md" sx={{ py: 8, minHeight: '52vh' }}>
     <Typography variant="h3" fontWeight={900} sx={{ mb: 3 }}>לוח זמנים</Typography>
     <Grid container spacing={2}>
       {rows.map((r, i) => (

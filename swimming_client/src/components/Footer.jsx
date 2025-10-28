@@ -10,7 +10,7 @@ const Footer = () => {
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" fontWeight={800}>הפועל באר שבע — שחייה</Typography>
+            <Typography variant="h6" fontWeight={800}>הפועל באר שבע שחייה</Typography>
             <Typography variant="body2" sx={{ mt: 1 }}>
               בית מקצועי לשחיינים בכל הגילים והרמות. אימוני איכות, צוות מנוסה ואווירה משפחתית.
             </Typography>

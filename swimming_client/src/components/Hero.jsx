@@ -6,12 +6,26 @@ const Hero = () => {
     <Box sx={{
       background: (t) => `linear-gradient(180deg, ${t.palette.primary.main} 0%, ${t.palette.secondary.main} 100%)`,
       color: 'white',
-      py: { xs: 8, md: 12 },
+      py: { xs: 8, md: 5 },
+      mt: -8,
       textAlign: 'center',
     }}>
+      <img
+        src="..\public\Screenshot 2.png"
+        alt="Logo"
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          borderRadius: '50%',
+          width: '57%', // По умолчанию 100% ширины
+          maxWidth: '440px', // Максимальная ширина для ПК
+        }}
+        className="responsive-img"
+      />
+
       <Container maxWidth="lg">
         <Typography variant="overline" sx={{ opacity: 0.9 }}>מאמנים אלופים • קהילה חזקה</Typography>
-        <Typography variant="h2" fontWeight={900} sx={{ mt: 1 }}>מצטרפים לחוג השחייה של הפועל באר שבע</Typography>
+        <Typography variant="h2" fontWeight={900} sx={{ mt: 1 }}>מצטרפים לחוג השחייה של <br></br> הפועל באר שבע</Typography>
         <Typography variant="h6" sx={{ mt: 2, opacity: 0.95 }}>
           אימונים מקצועיים לילדים, נוער ובוגרים. קבוצות לפי רמות, מתקנים מעולים ותחרויות.
         </Typography>

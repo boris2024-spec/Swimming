@@ -2,13 +2,13 @@ import React from 'react';
 import { Container, Grid, Card, CardContent, Typography, Button } from '@mui/material';
 
 const plans = [
-  { title: 'חוג חודשי', price: '₪220', features: ['2 אימונים בשבוע', 'ביטוח ספורט', 'קבוצות לפי רמה'] },
-  { title: 'חופשי‑חודשי', price: '₪320', features: ['עד 4 אימונים בשבוע', 'ביטוח ספורט', 'תמיכה אישית'] },
-  { title: 'נבחרת', price: '₪—', features: ['ע"פ בדיקות המאמן', 'תחרויות', 'תוכנית אישית'] },
+  { title: 'חוג חודשי', price: '₪500', features: ['2 אימונים בשבוע', 'ביטוח ספורט', 'קבוצות לפי רמה'] },
+  { title: 'חוג של נבחרת', price: '₪550', features: ['עד 4 אימונים בשבוע', 'ביטוח ספורט', 'תמיכה אישית'] },
+  { title: 'אימונים אישיים', price: '₪—', features: ['ע"פ בדיקות המאמן', 'תחרויות', 'תוכנית אישית'] },
 ];
 
 const Pricing = () => (
-  <Container maxWidth="lg" sx={{ py: 8 }}>
+   <Container maxWidth="md" sx={{ py: 8, minHeight: '52vh' }}>
     <Typography variant="h3" fontWeight={900} sx={{ mb: 3 }}>מחירים</Typography>
     <Grid container spacing={3}>
       {plans.map((p) => (

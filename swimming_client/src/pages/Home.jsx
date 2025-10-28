@@ -16,6 +16,8 @@ const Home = () => (
     <Hero />
     <StatsStripe />
 
+    
+
     <Container maxWidth="lg" sx={{ py: 8 }}>
       <SectionTitle kicker="מה בתוכנית" title="מסלולים וקבוצות" subtitle="התאמה לפי גיל ורמה" />
       <ProgramsGrid />

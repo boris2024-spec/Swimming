@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, TextField, Grid, Button, Paper } from '@mui/material';
 
 const Contact = () => (
-  <Container maxWidth="md" sx={{ py: 8 }}>
+   <Container maxWidth="md" sx={{ py: 8, minHeight: '52vh' }}>
     <Typography variant="h3" fontWeight={900}>צור קשר</Typography>
     <Paper sx={{ p: 3, mt: 3 }}>
       <Grid container spacing={2} component="form" onSubmit={(e) => e.preventDefault()}>
