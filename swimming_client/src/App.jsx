@@ -19,7 +19,7 @@ import Programs from './pages/Programs.jsx';
 import FAQPage from './pages/FAQPage.jsx';
 import { getTheme } from './theme.js';
 
-export const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 const App = () => {
   const [mode, setMode] = useState('light');
@@ -35,7 +35,7 @@ const App = () => {
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <BrowserRouter>
+          <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
