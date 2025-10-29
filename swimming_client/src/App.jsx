@@ -18,6 +18,8 @@ import Coaches from './pages/Coaches.jsx';
 import Programs from './pages/Programs.jsx';
 import FAQPage from './pages/FAQPage.jsx';
 import { getTheme } from './theme.js';
+import ScrollToTop from './components/ScrollToTop.jsx';
+import WhatsAppFab from './components/WhatsAppFab.jsx';
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -36,6 +38,7 @@ const App = () => {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+            <ScrollToTop />
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
@@ -51,6 +54,7 @@ const App = () => {
               <Route path="*" element={<Home />} />
             </Routes>
             <Footer />
+            <WhatsAppFab />
           </BrowserRouter>
         </ThemeProvider>
       </ColorModeContext.Provider>

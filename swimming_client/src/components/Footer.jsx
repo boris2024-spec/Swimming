@@ -32,8 +32,24 @@ const Footer = () => {
               <Typography>08-0000000</Typography>
             </Stack>
             <Stack direction="row" spacing={1} sx={{ mt: 1 }}>
-              <IconButton aria-label="facebook"><FacebookIcon /></IconButton>
-              <IconButton aria-label="instagram"><InstagramIcon /></IconButton>
+              <IconButton
+                aria-label="facebook"
+                component="a"
+                href="https://www.facebook.com/p/%D7%A7%D7%91%D7%95%D7%A6%D7%AA-%D7%94%D7%A4%D7%95%D7%A2%D7%9C-%D7%91%D7%90%D7%A8-%D7%A9%D7%91%D7%A2-%D7%A9%D7%97%D7%99%D7%99%D7%94-100028021075453/?locale=he_IL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FacebookIcon />
+              </IconButton>
+              <IconButton
+                aria-label="instagram"
+                component="a"
+                href="https://www.instagram.com/hbs_swimming7/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon />
+              </IconButton>
             </Stack>
           </Grid>
         </Grid>
